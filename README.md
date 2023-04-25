@@ -10,5 +10,4 @@
 ![t2i](assets/angry.jpg)
 ![t2i](assets/fearful.jpg)
 ![t2i](assets/disgusted.jpg)
-![t2i](assets/neutral.jpg)
 ![t2i](assets/surprised.jpg)
