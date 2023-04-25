@@ -1,3 +1,6 @@
+# Using webcams to take a picture
+# Function from: https://colab.research.google.com/drive/1QnC7lV7oVFk5OZCm75fqbLAfD9qBy9bw?usp=sharing#scrollTo=Fj9YcAnsT4B
+
 # import dependencies
 from IPython.display import display, Javascript, Image
 from google.colab.output import eval_js
