@@ -1,6 +1,6 @@
 # VAHA - Visual Artwork for Human Affections
  
-**[NYU Tandon, Deep Learning for Media Final Project]**
+[NYU Tandon, Deep Learning for Media Final Project]
 
 [Liqian Zhang](), [Yunfeng Qi](), [Joanne Tang]()
 
@@ -13,17 +13,17 @@
 ![t2i](assets/disgusted.jpg)
 ![t2i](assets/surprised.jpg)
 
-## Introduction
+## **Introduction**
 
 The **Visual Artwork for Human Affections(VAHA)** is ...(Intro here)
 
 Check our demo on how to use. 
 
-## Dataset
+## **Dataset**
 
 We used [[`FER-2013 Dataset`](https://www.kaggle.com/datasets/ananthu017/emotion-detection-fer?select=train)] to trained our emotion detector. And we used [[`Wiki-art Dataset`](https://www.kaggle.com/datasets/steubk/wikiart)] with [[`Artemis`](https://www.artemisdataset.org/)] annotated labels to trained our cGAN model. 
 
-## Models 
+## **Models** 
 
 ### Emotion detector 
 
@@ -46,7 +46,7 @@ We input all generated images through Artemis pre-trained model, and take the 3 
 
 Because of the limited computing resources, the output images of our cGAN is in 64x64x3. So we take our outputs images in Real-ESRGAN denoising model for further denoising. 
 
-## Citation 
+## **Citation** 
 
 Big thanks to all resources we've been used: 
 
