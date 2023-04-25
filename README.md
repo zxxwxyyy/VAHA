@@ -4,7 +4,7 @@
 
 [Liqian Zhang](), [Yunfeng Qi](), [Joanne Tang]()
 
-[[`Demo`](https://colab.research.google.com/drive/1sGToDW9JF8Q5iSagNdZ5_ornuEncvPl5?usp=sharing)]
+[[`Demo`](https://colab.research.google.com/assets/colab-badge.svg)(https://colab.research.google.com/drive/1sGToDW9JF8Q5iSagNdZ5_ornuEncvPl5?usp=sharing)]
 [[`Presentation`]()]
 
 ![t2i](assets/happy.jpg)
