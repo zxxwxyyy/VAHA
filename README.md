@@ -30,7 +30,7 @@ We used [[`FER-2013 Dataset`](https://www.kaggle.com/datasets/ananthu017/emotion
 Through our [[model experiment](https://github.com/zxxwxyyy/VAHA/blob/main/Notebooks/VAHA_emotion_detect_model_experiment.ipynb)], we notice [[`vgg16`](https://keras.io/api/applications/vgg/)] offers the best performance. So we set all layers to trainable, and trained it with FER-2013 dataset for 20 epochs to adpat features on our specific needs. 
 
 ![d2i](assets/model_compare.png)
-![d2i](assets/vgg_16.jpg)
+<!-- ![d2i](assets/vgg_16.jpg) -->
 
 ### Conditional Generative Adversarial Network (cGAN)
 
@@ -43,7 +43,7 @@ Our VAHA model is trained on [[`Wiki-art Dataset`](https://www.kaggle.com/datase
 Big thanks to all resources we've been used: 
 
 Artemis:
-'''
+```
      @article{achlioptas2021artemis,
                 title={ArtEmis: Affective Language for Visual Art},
                 author={Achlioptas, Panos and Ovsjanikov, Maks and Haydarov,
@@ -51,16 +51,15 @@ Artemis:
                 journal = {CoRR},
                 volume = {abs/2101.07396},
                 year={2021}}
-'''
+```
 
 Real-ESRGAN: 
-'''
+```
 @InProceedings{wang2021realesrgan,
     author    = {Xintao Wang and Liangbin Xie and Chao Dong and Ying Shan},
     title     = {Real-ESRGAN: Training Real-World Blind Super-Resolution with Pure Synthetic Data},
     booktitle = {International Conference on Computer Vision Workshops (ICCVW)},
     date      = {2021}
 }
-'''
+```
 
-VGG16: 
