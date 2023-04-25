@@ -6,7 +6,7 @@
 
 [[`Demo`](https://colab.research.google.com/drive/1sGToDW9JF8Q5iSagNdZ5_ornuEncvPl5?usp=sharing)]
 
-![t2i `happy`](assets/happy.jpg)
+![t2i](assets/happy.jpg)
 ![t2i](assets/happy2.jpg)
 ![t2i](assets/angry.jpg)
 ![t2i](assets/fearful.jpg)
