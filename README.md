@@ -38,7 +38,15 @@ Our VAHA model is trained on [[`Wiki-art Dataset`](https://www.kaggle.com/datase
 
 ![d2i](assets/cGAN_model.png)
 
-### Citation 
+### Artemis pre-trained model
+
+We input all generated images through Artemis pre-trained model, and take the 3 images that has the highest prediction probabilities as outputs. 
+
+### Real-ESRGAN denoising model 
+
+Because of the limited computing resources, the output images of our cGAN is in 64x64x3. So we take our outputs images in Real-ESRGAN denoising model for further denoising. 
+
+## Citation 
 
 Big thanks to all resources we've been used: 
 
