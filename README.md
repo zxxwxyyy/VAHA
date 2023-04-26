@@ -5,14 +5,16 @@
 [Liqian Zhang](), [Yunfeng Qi](), [Joanne Tang]()
 
 [[`Demo`](https://colab.research.google.com/drive/1sGToDW9JF8Q5iSagNdZ5_ornuEncvPl5?usp=sharing)]
-[[`Presentation`]()]
+[[`Presentation`](https://docs.google.com/presentation/d/1ZYf7WW_uSSE5V4EUYXyrYrDDmwPbSk9NadjnbihCkDs/edit?usp=sharing)]
 
 ![t2i](assets/final_results.png)
 
 
 ## **Introduction**
 
-The **Visual Artwork for Human Affections(VAHA)** is ...(Intro here)
+The **Visual Artwork for Human Affections(VAHA)** is an innovative model designed to explore the intersection of creativity, human emotions, and artificial intelligence. Our goal is to provide a deeper understanding of the complexity of human emotions by automating the generation of abstract visual artwork through the technique of emotions recognition.
+
+The **VAHA** model consists of two established models: the VGG16 and the GAN. The VGG16, a Convolutional Neural Network (CNN) model, is pre-trained and specifically adapted for facial recognition in our system. On the other hand, the GAN (Generative Adversarial Network) is responsible for generating the visual art images by integrating the classifications of human emotions derived from the VGG16 model. The **VAHA model can produce artistic representations of various emotional states, incorporating a diverse range of associated artistic styles.**
 
 Check our demo on how to use. 
 
