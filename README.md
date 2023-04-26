@@ -27,6 +27,7 @@ Check our [[`Demo`](https://colab.research.google.com/drive/1sGToDW9JF8Q5iSagNdZ
 We utilized the [[`FER-2013 Dataset`](https://www.kaggle.com/datasets/ananthu017/emotion-detection-fer?select=train)] to train our emotion detector, while the [[`Wiki-art Dataset`](https://www.kaggle.com/datasets/steubk/wikiart)] combined with [[`Artemis`](https://www.artemisdataset.org/)] annotated labels were employed to train our cGAN model.
 
 ## **Models** 
+![d2i](assets/cGAN_model.png)
 
 ### Emotion detector 
 
