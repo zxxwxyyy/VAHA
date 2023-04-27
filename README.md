@@ -24,7 +24,7 @@ The first step in the pipeline involves capturing the user's facial expression t
 
 Once the facial expression is captured, we employ the VGG16 convolutional model for emotion classification. The captured face is pre-processed and fed into a pre-trained VGG16 model, which has been fine-tuned for emotion recognition. The model classifies the input image into one of the emotion categories, such as happy, sad, or angry.
 
-With the detected emotion, we condition a GAN model to generate new artistic images that correspond to the identified emotion. The GAN consists of a generator network that creates images and a discriminator network that evaluates their authenticity. By providing the detected emotion as label embedding, the generator is guided to produce artworks that match the desired emotional state.
+With the detected emotion, we condition the GAN model to generate new artistic images that correspond to the identified emotion. The GAN consists of a generator network that creates images and a discriminator network that evaluates their authenticity. By providing the detected emotion as label embedding, the generator is guided to produce artworks that match the desired emotional state.
 
 To evaluate the performance of the GAN model and select the best generated images, we use the Artemis model to classify the synthesized artworks into emotion categories. By comparing the classification results with the desired emotion, we can assess the GAN's ability to generate emotion-driven images. We then select the highest-quality images based on this evaluation.
 
