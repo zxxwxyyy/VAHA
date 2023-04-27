@@ -2,7 +2,7 @@
  
 [NYU Tandon, Deep Learning for Media Final Project]
 
-[Liqian Zhang](https://github.com/zxxwxyyy), [Yunfeng Qi](https://github.com/fysta), [Joanne Tang](https://github.com/Joannetang07)
+[Liqian Zhang](https://github.com/zxxwxyyy), [Yunfeng Qi](https://github.com/fysta), and [Joanne Tang](https://github.com/Joannetang07)
 
 [[`Demo`](https://colab.research.google.com/drive/1xNkJF6oxaU_dMSq51RtL7SLM2lHjvKBl?usp=sharing)]
 [[`Presentation`](https://docs.google.com/presentation/d/1ZYf7WW_uSSE5V4EUYXyrYrDDmwPbSk9NadjnbihCkDs/edit?usp=sharing)]
