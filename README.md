@@ -43,14 +43,13 @@ We utilized the [[`FER-2013 Dataset`](https://www.kaggle.com/datasets/ananthu017
 Through our [[model experiment](https://github.com/zxxwxyyy/VAHA/blob/main/Notebooks/(Part1)VAHA_emotion_detect_model_experiment.ipynb)], we observed that [[`vgg16`](https://keras.io/api/applications/vgg/)] yielded the best performance. Consequently, we set all layers to trainable and fine-tuned the model with the FER-2013 dataset for 20 epochs to adapt the features to our specific requirements. 
 
 ![d2i](assets/model_compare.png)
-<!-- ![d2i](assets/cgan_diagram.png) -->
+
 
 ### Conditional Generative Adversarial Network (cGAN)
 
 Our VAHA model is trained on [[`Wiki-art Dataset`](https://www.kaggle.com/datasets/steubk/wikiart)] with [[`Artemis`](https://www.artemisdataset.org/)] emotion labels. The generator accepts random noise and a class label as inputs, generating images conditioned on the class label. The label embedding and concatenation layers enable the generator to integrate class label information into the generated image, ensuring class-specific outputs. You may find our process in our [[notebook](https://github.com/zxxwxyyy/VAHA/blob/main/Notebooks/(Part3)VAHA_cGAN_experiment.ipynb)].
 
-![d2i](assets/generator.png)
-![d2i](assets/discriminator.png)
+![d2i](assets/cgan_diagram.png)
 
 ### Artemis pre-trained model
 
