@@ -6,6 +6,7 @@ from sklearn.preprocessing import LabelEncoder
 import pandas as pd
 import os
 import tensorflow as tf
+import cv2
 
 df = pd.read_pickle('/content/VAHA/artemis_df.pkl')
 scale_factor = 5
