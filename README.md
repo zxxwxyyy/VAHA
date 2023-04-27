@@ -49,6 +49,7 @@ Through our [[model experiment](https://github.com/zxxwxyyy/VAHA/blob/main/Noteb
 
 Our VAHA model is trained on [[`Wiki-art Dataset`](https://www.kaggle.com/datasets/steubk/wikiart)] with [[`Artemis`](https://www.artemisdataset.org/)] emotion labels. The generator accepts random noise and a class label as inputs, generating images conditioned on the class label. The label embedding and concatenation layers enable the generator to integrate class label information into the generated image, ensuring class-specific outputs. You may find our process in our [[notebook](https://github.com/zxxwxyyy/VAHA/blob/main/Notebooks/(Part3)VAHA_cGAN_experiment.ipynb)].
 
+
 ![d2i](assets/cgan_diagram.png)
 
 ### Artemis pre-trained model
