@@ -36,14 +36,14 @@ In the final step, we employ a denoising model to upscale and improve the visual
 We utilized the [[`FER-2013 Dataset`](https://www.kaggle.com/datasets/ananthu017/emotion-detection-fer?select=train)] to train our emotion detector, while the [[`Wiki-art Dataset`](https://www.kaggle.com/datasets/steubk/wikiart)] combined with [[`Artemis`](https://www.artemisdataset.org/)] annotated labels were employed to train our cGAN model.
 
 ## **Models** 
-![d2i](assets/cGAN_model.png)
+![d2i](assets/vaha_diagram.png)
 
 ### Emotion detector 
 
 Through our [[model experiment](https://github.com/zxxwxyyy/VAHA/blob/main/Notebooks/(Part1)VAHA_emotion_detect_model_experiment.ipynb)], we observed that [[`vgg16`](https://keras.io/api/applications/vgg/)] yielded the best performance. Consequently, we set all layers to trainable and fine-tuned the model with the FER-2013 dataset for 20 epochs to adapt the features to our specific requirements. 
 
 ![d2i](assets/model_compare.png)
-<!-- ![d2i](assets/vgg_16.jpg) -->
+<!-- ![d2i](assets/cgan_diagram.png) -->
 
 ### Conditional Generative Adversarial Network (cGAN)
 
