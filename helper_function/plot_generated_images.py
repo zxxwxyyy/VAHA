@@ -6,7 +6,7 @@ from sklearn.preprocessing import LabelEncoder
 import pandas as pd
 import os
 
-df = pd.read_pickle('/content/drive/MyDrive/cGAN/artemis_df.pkl')
+df = pd.read_pickle('/content/VAHA/artemis_df.pkl')
 scale_factor = 5
 NOISE_DIM = 128
 label_encoder = LabelEncoder()
