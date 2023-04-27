@@ -5,6 +5,7 @@ from torch.nn.functional import softmax
 from sklearn.preprocessing import LabelEncoder
 import pandas as pd
 import os
+import tensorflow as tf
 
 df = pd.read_pickle('/content/VAHA/artemis_df.pkl')
 scale_factor = 5
@@ -26,7 +27,7 @@ labels_mapping = {
 
 def load_and_generate_images_with_specific_label(model_folder, num_examples, noise_dim, label, label_encoder):
     # Load the saved generator model
-    folder_path = '/content/drive/MyDrive/cGAN/best_gan/'
+    folder_path = '/content/VAHA/Models/'
     generator_path = os.path.join(folder_path, model_folder)
     generator = tf.keras.models.load_model(generator_path)
 
