@@ -9,7 +9,6 @@ import tensorflow as tf
 import cv2
 
 df = pd.read_pickle('/content/VAHA/artemis_df.pkl')
-scale_factor = 5
 NOISE_DIM = 128
 label_encoder = LabelEncoder()
 encoded_labels = label_encoder.fit_transform(df['emotion'])
@@ -42,8 +41,6 @@ def load_and_generate_images_with_specific_label(model_folder, num_examples, noi
     # Rescale images to [0, 1] range
     generated_images = 0.5 * generated_images + 0.5
 
-    # Upscale each image
-    # upscaled_images = [upscale_bicubic(image, scale_factor=5.0) for image in generated_images]
     return generated_images
 
 
@@ -56,20 +53,17 @@ def group_duplicate_classes(labels_mapping):
             grouped_classes[class_name].append(encoded_label)
     return grouped_classes
 
-def upscale_image(image, scale_factor):
-    return cv2.resize(image, None, fx=scale_factor, fy=scale_factor, interpolation=cv2.INTER_CUBIC)
 
-
-def save_upscaled_images(upscaled_images, folder_name='saved_images'):
+def save_generated_images(generated_images, folder_name='saved_images'):
     if not os.path.exists(folder_name):
         os.makedirs(folder_name)
 
-    for i, image in enumerate(upscaled_images):
+    for i, image in enumerate(generated_images):
         normalized_image = (image * 255).astype(np.uint8)
-        file_name = os.path.join(folder_name, f"upscaled_image_{i}.png")
+        file_name = os.path.join(folder_name, f"generated_image_{i}.png")
         cv2.imwrite(file_name, cv2.cvtColor(normalized_image, cv2.COLOR_RGB2BGR))
 
-def plot_generated_images_with_predictions(model_folder, artemis_model, num_examples, noise_dim, class_name, label_encoder, labels_mapping, scale_factor=scale_factor):
+def plot_generated_images_with_predictions(model_folder, artemis_model, num_examples, noise_dim, class_name, label_encoder, labels_mapping):
     # Load and generate images with a specific label
     generated_images = load_and_generate_images_with_specific_label(model_folder, num_examples, noise_dim, class_name, label_encoder)
 
@@ -96,12 +90,11 @@ def plot_generated_images_with_predictions(model_folder, artemis_model, num_exam
     sorted_images = generated_images[sorted_indices][:3]  # Select the top 3 images
     sorted_pred_probs = combined_probs[sorted_indices][:3]  # Select the top 3 probabilities
 
-    # Upscale the images
-    upscaled_images = [upscale_image(image, scale_factor) for image in sorted_images]
-    save_upscaled_images(upscaled_images)
+    # save the generated images
+    save_generated_images(sorted_images)
     # Plot the generated images with input and predicted labels
     plt.figure(figsize=(10, 10))
-    for i, (image, predicted_label, prob) in enumerate(zip(upscaled_images, decoded_predictions, sorted_pred_probs)):
+    for i, (image, predicted_label, prob) in enumerate(zip(sorted_images, decoded_predictions, sorted_pred_probs)):
         plt.subplot(4, 4, i + 1)
         plt.imshow(image, aspect='auto')
         plt.title(f"Input: {class_name}\nProb: {prob:.4f}")
@@ -109,4 +102,4 @@ def plot_generated_images_with_predictions(model_folder, artemis_model, num_exam
     plt.tight_layout();
     plt.show();
     
-    return upscaled_images
+    return sorted_images
