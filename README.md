@@ -7,6 +7,8 @@
 [[`Demo`](https://colab.research.google.com/drive/1xNkJF6oxaU_dMSq51RtL7SLM2lHjvKBl?usp=sharing)]
 [[`Presentation`](https://docs.google.com/presentation/d/1ZYf7WW_uSSE5V4EUYXyrYrDDmwPbSk9NadjnbihCkDs/edit?usp=sharing)]
 
+Full stack demo with React and Flask [[`Here`](https://github.com/zxxwxyyy/Dynamic-Web-Fall23/tree/main/final-redux-updated)]
+
 ![t2i](assets/final_results.png)
 
 
